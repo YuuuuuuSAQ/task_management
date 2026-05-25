@@ -3,7 +3,7 @@ public class Task {
     private final String title;
     private boolean completed;
 
-    public Task(int id, String title){
+    public Task(int id, String title) {
         this.id = id;
         this.title = title;
         this.completed = false;
@@ -27,8 +27,7 @@ public class Task {
 
     @Override
     public String toString() {
-        String status = completed ? "完了" : "未完了";
+        String status = completed ? "\u5b8c\u4e86" : "\u672a\u5b8c\u4e86";
         return id + ". [" + status + "] " + title;
     }
-
 }
